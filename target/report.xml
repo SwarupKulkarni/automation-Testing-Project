@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="9" time="267.649269">
+    <testcase classname="sign up feature" name="Personal Agenda Functionality." time="27.7346">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option...................................passed
+Then User navigates the personal agenda option..............................passed
+Then User clicks on Calendar option.........................................passed
+Then User navigates the calendar option.....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Calendar by month Functionality" time="40.077651">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option 1.................................passed
+Then User clicks on Date present............................................passed
+Then User enter the title...................................................passed
+And User clicks on add button...............................................passed
+And User navigates the agenda...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Save the Edited Personal Agenda." time="34.142612">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User Clicks on saved Agenda............................................passed
+Then User clicks on Edit button.............................................passed
+And User navigates the edit agenda tab......................................passed
+And User enter the "Day 1" and Date range...................................passed
+And user clicks on Edit Event...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Delete the saved agenda." time="20.825337">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User Clicks on saved Agenda again......................................passed
+Then User clicks on Delete option...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Calendar by Week Functionality." time="28.044723">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User Click on Calendar by week option..................................passed
+And User navigates to change the week.......................................passed
+And User navigates to previous week.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Calendar by Day Functionality." time="26.720104">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User Click on Calendar by Day option...................................passed
+Then User click on Today Btn................................................passed
+And User Click on Forward btn...............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Agenda List Functionality." time="26.552408">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User Click on Agenda List btn..........................................passed
+Then User Clicks on agenda list option......................................passed
+And User Navigates the agenda list option...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Sessions Plan Calendar functionality." time="28.130782">
+        <system-out><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User click on Sessions plan calendar...................................passed
+Then User navigates the Sessions plan calendar..............................passed
+And User click on previous year.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="sign up feature" name="Bug while creating a personal agenda" time="35.421052">
+        <failure message="org.junit.ComparisonFailure: expected:&lt;...on - My education - [Agenda]&gt; but was:&lt;...on - My education - [Edit]&gt;&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:117)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:146)&#13;&#10;&#9;at StepDefination.signupdefination.user_navigate_the_personal_agenda(signupdefination.java:646)&#13;&#10;&#9;at ✽.User navigate the personal agenda.(file:src/test/java/Features/SignUp.feature:75)&#13;&#10;"><![CDATA[Given User is on the elearning application page.............................passed
+When User enters the login credentials like username and password...........passed
+Then User clicks on the login button........................................passed
+And User is navigated to the welcome page...................................passed
+When User Click on personal agenda option again.............................passed
+Then User clicks on Date present again......................................passed
+And User clicks on add button again.........................................passed
+Then User clicks on saved agenda again......................................passed
+Then user clicks on edit button.............................................passed
+And User clicks on edit agenda button to save the edited agenda.............passed
+And User navigate the personal agenda.......................................failed
+
+StackTrace:
+org.junit.ComparisonFailure: expected:<...on - My education - [Agenda]> but was:<...on - My education - [Edit]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at StepDefination.signupdefination.user_navigate_the_personal_agenda(signupdefination.java:646)
+	at ✽.User navigate the personal agenda.(file:src/test/java/Features/SignUp.feature:75)
+]]></failure>
+    </testcase>
+</testsuite>
